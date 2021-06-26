@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Actividad 3</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ffc;
+        padding: 5px;
+        border: #666 5px solid;
+      }
+
+      th {
+        padding: 10px;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .submit-button {
+        margin-top: 20px;
+        width: 100px;
+        height: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>REGISTRO DE EMPLEADOS</h1>
+
+    <form action="./empleados.php" method="post" name="datos" id="datos">
+      <table width="80%">
+        <tr>
+          <th>Empleado 1</th>
+          <th>Empleado 2</th>
+          <th>Empleado 3</th>
+        </tr>
+
+        <tr>
+          <td>
+            Ingrese el nombre y apellido del empleado<input
+              type="text"
+              name="nombre1"
+              id="nombre1"
+            />
+          </td>
+          <td>
+            Ingrese el nombre y apellido del empleado<input
+              type="text"
+              name="nombre2"
+              id="nombre2"
+            />
+          </td>
+          <td>
+            Ingrese el nombre y apellido del empleado<input
+              type="text"
+              name="nombre3"
+              id="nombre3"
+            />
+          </td>
+        </tr>
+         
+        <tr>
+          <td>
+            Ingrese la cédula del empleado<input
+              type="text"
+              name="cedula1"
+              id="cedula1"
+            />
+          </td>
+          <td>
+            Ingrese la cédula del empleado<input
+              type="text"
+              name="cedula2"
+              id="cedula2"
+            />
+          </td>
+          <td>
+            Ingrese la cédula del empleado<input
+              type="text"
+              name="cedula3"
+              id="cedula3"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Ingrese el sueldo del empleado<input
+              type="text"
+              name="sueldo1"
+              id="sueldo1"
+            />
+          </td>
+          <td>
+            Ingrese el sueldo del empleado<input
+              type="text"
+              name="sueldo2"
+              id="sueldo2"
+            />
+          </td>
+          <td>
+            Ingrese el sueldo del empleado<input
+              type="text"
+              name="sueldo3"
+              id="sueldo3"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Ingrese el departamento del empleado<input
+              type="text"
+              name="departamento1"
+              id="departamento1"
+            />
+          </td>
+          <td>
+            Ingrese el departamento del empleado<input
+              type="text"
+              name="departamento2"
+              id="departamento2"
+            />
+          </td>
+          <td>
+            Ingrese el departamento del empleado<input
+              type="text"
+              name="departamento3"
+              id="departamento3"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Ingrese el lugar de trabajo del empleado<input
+              type="text"
+              name="lugarDeTrabajo1"
+              id="lugarDeTrabajo1"
+            />
+          </td>
+          <td>
+            Ingrese el lugar de trabajo del empleado<input
+              type="text"
+              name="lugarDeTrabajo2"
+              id="lugarDeTrabajo2"
+            />
+          </td>
+          <td>
+            Ingrese el lugar de trabajo del empleado<input
+              type="text"
+              name="lugarDeTrabajo3"
+              id="lugarDeTrabajo3"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <input
+              type="submit"
+              name="enviarDatos"
+              id="enviarDatos"
+              value="Enviar"
+              class="submit-button"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

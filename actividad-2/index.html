@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Actividad 2</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      table {
+        background-color: #ffc;
+        padding: 5px;
+        border: #666 5px solid;
+      }
+
+      td {
+          display: block;
+          text-align: center;
+          margin-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CALCULAR ÁREA DE UN OCTAGONO REGULAR</h1>
+
+    <form action="./calculo.php" method="post" name="datos" id="datos">
+      <table width="30%" align="center">
+        <tr>
+          <td>Ingrese el valor del radio:</td>
+          <td>
+            <label for="valorRadio"></label>
+            <input type="text" name="valorRadio" id="valorRadio" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input
+              type="submit"
+              name="enviarDatos"
+              id="enviarDatos"
+              value="Enviar"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
