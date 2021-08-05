@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Directorio</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Crear Directorio</h1>
+    <form action="./crear-directorio.php" method="post" name="datos" id="datos">
+      <table width="30%" align="center">
+        <tr>
+          <td>Ingrese el nombre del directorio:</td>
+          <td>
+            <label for="nombreDirectorio"></label>
+            <input type="text" name="nombreDirectorio" id="nombreDirectorio" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <input
+              type="submit"
+              name="enviarDatos"
+              id="enviarDatos"
+              value="Enviar"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

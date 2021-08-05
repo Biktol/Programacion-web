@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Archivo TXT</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Crear Archivo TXT</h1>
+    <form action="./crear-archivo.php" method="post" name="datos" id="datos">
+      <table width="30%" align="center">
+        <tr>
+          <td>Ingrese el nombre del archivo:</td>
+          <td>
+            <label for="nombreArchivo"></label>
+            <input type="text" name="nombreArchivo" id="nombreArchivo" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Ingrese el texto del archivo:</td>
+          <td>
+            <label for="textoArchivo"></label>
+            <textarea
+              name="textoArchivo"
+              id="textoArchivo"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <input
+              type="submit"
+              name="enviarDatos"
+              id="enviarDatos"
+              value="Enviar"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <h1>Abrir Archivo</h1>
+    <form action="./leer-archivo.php" method="post" name="datos" id="datos">
+      <table width="30%" align="center">
+        <tr>
+          <td>Ingrese el nombre del archivo:</td>
+          <td>
+            <label for="nombreArchivoLeer"></label>
+            <input
+              type="text"
+              name="nombreArchivoLeer"
+              id="nombreArchivoLeer"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <input
+              type="submit"
+              name="enviarDatosLeer"
+              id="enviarDatosLeer"
+              value="Enviar"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
